@@ -1,0 +1,27 @@
+.articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 85%
+}
+
+.article-card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.article-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.article-name a {
+    color: var(--color-usf-primary);
+    font: var(--font-content-sections);
+}
+
+.article-name a:hover {
+    color: var(--color-usf-tertiary);
+}

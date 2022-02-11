@@ -1,24 +1,35 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`
+})
+
 module.exports = {
   siteMetadata: {
-      title: `WUSF`,
-    siteUrl: `https://www.yourdomain.tld`
+      title: `Tampa NPR, Local News Coverage`,
+      siteUrl: `https://wusf.org`,
+      author: {
+        name: 'WUSF Digital Services Team'
+      },
+      description: 'WUSF carries NPR News and Jazz in the Tampa Bay region',
+      social: {
+        twitter: 'wusf'
+      }
   },
-  plugins: [{
-    resolve: 'gatsby-plugin-google-analytics',
-    options: {
-      "trackingId": ""
-    }
-  }, "gatsby-plugin-image", "gatsby-plugin-react-helmet", {
+  plugins: [
+    "gatsby-plugin-image", 
+    "gatsby-plugin-react-helmet", 
+    {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
     }
-  }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", 
+  {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
       "path": "./src/images/"
     },
     __key: "images"
-  }]
+  }, 
+]
 };
