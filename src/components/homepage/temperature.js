@@ -6,7 +6,7 @@ import useFetch from '../../utils/useFetch'
 import { conversions } from '../../utils/conversions'
 
 export default function Temperature() {
-    const { loading, results, error } = useFetch('https://api.weather.gov/stations/KTPA/observations/latest')
+    const { loading, results, error } = useFetch('https://avwx.rest/api/metar/KTPA')
     const { celsiusToFahrenheit } = conversions
 
     return (
@@ -14,7 +14,7 @@ export default function Temperature() {
             { loading && <Loading /> }
             { !loading && error ? <Error /> :
                 `Tampa, FL
-                ${celsiusToFahrenheit(results?.properties?.temperature?.value)}` 
+                ${celsiusToFahrenheit(results?.sample?.remarks_info?.temperature_decimal?.value)}` 
                 ?? 'N/A'
             }&deg;
         </span>
