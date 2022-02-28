@@ -15,7 +15,7 @@ export default function Temperature() {
             { !loading && error ? <Error /> :
                 `Tampa, FL
                 ${celsiusToFahrenheit(results?.sample?.remarks_info?.temperature_decimal?.value)}` 
-                ?? 'N/A'
+                ?? ''
             }&deg;
         </span>
     )
