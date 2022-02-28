@@ -1,3 +1,5 @@
+const siteAddress = new URL('http://demo.wusf.digital.s3-website-us-east-1.amazonaws.com')
+
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`
 })
@@ -30,6 +32,14 @@ module.exports = {
       "path": "./src/images/"
     },
     __key: "images"
+  },
+  {
+    resolve: `gatsby-plugin-s3`,
+    options: {
+      bucketName: 'demo.wusf.digital',
+      protocol: siteAddress.protocol.slice(0, -1),
+      hostname: siteAddress.hostname,
+    },
   }, 
 ]
 };
