@@ -1,4 +1,4 @@
-const siteAddress = new URL('http://demo.wusf.digital.s3-website-us-east-1.amazonaws.com')
+const siteAddress = new URL('http://demo.wusf.digital')
 
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`
