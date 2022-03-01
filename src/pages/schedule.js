@@ -3,10 +3,12 @@ import React from 'react'
 import Loading from '../components/loading'
 import Error from '../components/error'
 import useFetch from '../utils/useFetch'
+import { useSiteMetadata } from '../utils/use-site-metadata'
 import Layout from '../components/layout'
 
 export default function Schedule() {
-    const { loading, results, error } = useFetch('https://dev.wusf.digital/wp-json/wp/v2/pages/?include=208765')
+  const { wordPressBackend } = useSiteMetadata()
+  const { loading, results, error } = useFetch(`${wordPressBackend}/wp-json/wp/v2/pages/?include=208765`)
   return (
   <Layout>
     <article className='content'>

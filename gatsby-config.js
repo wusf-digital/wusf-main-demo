@@ -8,6 +8,7 @@ module.exports = {
   siteMetadata: {
       title: `Tampa NPR, Local News Coverage`,
       siteUrl: `https://wusf.org`,
+      wordPressBackend: `https://dev.wusf.digital`,
       author: {
         name: 'WUSF Digital Services Team'
       },
