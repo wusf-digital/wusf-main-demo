@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
@@ -14,9 +15,11 @@ export default function Navbar() {
         <nav className='main-nav'>
             <div className='main-nav__container'>
             <ul>
-                <li>Schedule</li>
+                <Link to='/schedule'>
+                    <li>Schedule</li>
+                </Link>
                 <li>Programs</li>
-                <li>Support</li>
+                <Link to='/ways-to-support'><li>Support</li></Link>
                 <a href='https://wusfnews.wusf.usf.edu/weather'
                     target='_blank'
                     rel='noopener noreferrer'>
@@ -28,7 +31,7 @@ export default function Navbar() {
                     <li>Events</li>
                 </a>
                 
-                <li>About Us</li>
+                <Link to='/about-us'><li>About Us</li></Link>
                 <a href='https://wusfnews.wusf.usf.edu/'
                     target='_blank'
                     rel='noopener noreferrer'>

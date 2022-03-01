@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 export default function FooterLinks() {
     return (
@@ -6,24 +7,36 @@ export default function FooterLinks() {
             <div className='footer-links__support'>
                 <span className='footer-links__title'>Ways to Support</span>
                 <ul>
-                    <li>Donate Your Vehicle</li>
                     <a href='https://wusf.careasy.org/home'
-                        target='_blank'
                         rel='noopener noreferrer'>
-                        <li>Make A Donation</li>
+                        <li>Donate Your Vehicle</li>
                     </a>
-                    <li>Become A Member</li>
-                    <li>Corporate Sponsor</li>
+                    <Link to='/ways-to-support'>
+                        <li>Make A Donation</li>
+                    </Link>
+                    <Link to='/sustainer'>
+                        <li>Become A Member</li>
+                    </Link>
+                    <Link to='/corporate-sponsor'>
+                        <li>Corporate Sponsor</li>
+                    </Link>
+                    
                 </ul>
             </div>
             <div className='footer-links__programming'>
                 <span className='footer-links__title'>Programming</span>
                 <ul>
-                    <li>Ways To Listen</li>
-                    <li>Download Our App</li>
-                    <li>Digital Stream Help</li>
+                    <Link to='/ways-to-listen'>
+                        <li>Ways To Listen</li>
+                    </Link>
+                    <Link to='/app'>
+                        <li>Download Our App</li>
+                    </Link>
+                    <a href='https://dev.wusf.digital/wp-content/uploads/assets/pdfs/Digital-Stream-Troubleshooting.pdf'
+                        rel='noopener noreferrer'>
+                        <li>Digital Stream Help</li>
+                    </a>
                     <a href='https://thefloridachannel.org/'
-                        target='_blank'
                         rel='noopener noreferrer'>
                         <li>The Florida Channel</li>
                     </a>
@@ -32,19 +45,36 @@ export default function FooterLinks() {
             <div className='footer-links__about'>
                 <span className='footer-links__title'>About</span>
                 <ul>
-                    <li>Contact Us</li>
-                    <li>Careers</li>
-                    <li>Meet The Staff</li>
-                    <li>Internships</li>
-                    <li>Newsletter</li>
-                    <li>Governance</li>
+                    <Link to='/contact-us'>
+                        <li>Contact Us</li>
+                    </Link>
+                    <Link to='/employment-opportunities'>
+                        <li>Careers</li>
+                    </Link>
+                    <a href='https://wusfnews.wusf.usf.edu/meet-the-staff'
+                        rel='noopener noreferrer'>
+                        <li>Meet The Staff</li>
+                    </a>
+                    <Link to='internship'>
+                        <li>Internships</li>
+                    </Link>
+                    <Link to='/newsletter'>
+                        <li>Newsletter</li>
+                    </Link>
+                    <Link to='/governance'>
+                        <li>Governance</li>
+                    </Link>
                     <a href='https://publicfiles.fcc.gov/fm-profile/wusf'
-                        target='_blank'
                         rel='noopener noreferrer'>
                         <li>FCC Public Files</li>
                     </a>
-                    <li>Public File Assistance</li>
-                    <li>2021 EEO Report</li>
+                    <a href='mailto:tsmith45@wusf.org'>
+                        <li>Public File Assistance</li>
+                    </a>
+                    <a href='https://wusf.org/wp-content/uploads/2021/09/2021_WUSF_EEO_Public_File_Report.pdf'
+                        rel='noopener noreferrer'>
+                        <li>2021 EEO Report</li>
+                    </a>
                 </ul>
             </div>
         </nav>
