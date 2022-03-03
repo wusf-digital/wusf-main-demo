@@ -258,7 +258,7 @@ a:focus {
         margin: 0 0 20px 0;
     }
     .main-nav__social {
-        display: none;
+        display: block;
     }
     .main-nav__divider {
         display: block;   
