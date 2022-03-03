@@ -11,6 +11,7 @@ export default function Header() {
             <div className='header-bar'>
                 <Link to='/'>
                     <StaticImage
+                        className='image--responsive header-bar--logo'
                         layout="fixed"
                         formats={["auto", "webp", "avif"]}
                         src="../images/wusf_logo.webp"
