@@ -79,7 +79,7 @@ export default function FooterLinks() {
                     </a>
                 </ul>
             </div>
-            <FollowUs />
+            <FollowUs className='footer-links--social'/>
         </nav>
     )
 }

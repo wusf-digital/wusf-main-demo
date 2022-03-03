@@ -16,7 +16,7 @@ export default function WUSFNews() {
             {!loading && error ? <Error /> : 
             results?.list.story.map(story => {
                 return ( 
-                    <Card key={story.id} style={{width: '45%'}}>
+                    <Card key={story.id}>
                         <Card.Img 
                             className='article-card-img-top'
                             variant='top' 

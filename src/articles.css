@@ -1,22 +1,16 @@
 .articles {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 1.5rem;
     width: 85%
 }
-
 .article-card-img-top {
     width: 100%;
-    height: 15vw;
     object-fit: cover;
 }
-
 .article-name {
     font-size: 1.2rem;
     font-weight: bold;
 }
-
 .article-name a {
     color: var(--color-usf-primary);
     font: var(--font-content-sections);
@@ -30,6 +24,11 @@
     .articles {
         width: 100%;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .article-card-img-top {
+        height: auto;
     }
 }
 
@@ -37,5 +36,11 @@
     .articles {
         width: 85%;
         justify-content: flex-start;
+        align-items: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .article-card-img-top {
+        height: 20vw;
     }
 }

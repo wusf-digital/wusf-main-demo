@@ -51,7 +51,7 @@ export default function Navbar() {
                         <li className='main-nav--links-list'>StoryCorps Tampa Bay</li>
                     </a> 
                 </ul>
-                <FollowUs />
+                <FollowUs className='main-nav--social' />
             </div>
         </nav>
     )

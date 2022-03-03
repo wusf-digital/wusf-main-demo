@@ -9,9 +9,9 @@ import {
     faLinkedin
 } from '@fortawesome/free-brands-svg-icons'
 
-export default function FollowUs() {
+export default function FollowUs(props) {
     return (
-        <div className='main-nav__social'>
+        <div className={props.className}>
             <hr className='main-nav__divider' />
             <span>Follow Us</span>
             <div className='main-nav__social-links-list'>
