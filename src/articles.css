@@ -20,7 +20,11 @@
     color: var(--color-usf-tertiary);
 }
 
-@media (min-width: 500px) {
+/*  */
+/* THIS SECTION IS FOR MOBILE VIEWS */
+/*  */
+
+@media (max-width: 992px) {
     .articles {
         width: 100%;
         justify-content: center;
@@ -31,6 +35,10 @@
         height: auto;
     }
 }
+
+/*  */
+/* THIS SECTION IS FOR LAPTOP AND DESKTOP VIEWS */
+/*  */
 
 @media (min-width: 992px) {
     .articles {
