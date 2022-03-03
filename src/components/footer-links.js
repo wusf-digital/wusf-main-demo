@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import FollowUs from './follow-us'
+
 export default function FooterLinks() {
     return (
         <nav className='footer-links'>
             <div className='footer-links__support'>
                 <span className='footer-links__title'>Ways to Support</span>
-                <ul>
+                <ul className='footer-links__list'>
                     <a href='https://wusf.careasy.org/home'
                         rel='noopener noreferrer'>
                         <li>Donate Your Vehicle</li>
@@ -25,7 +27,7 @@ export default function FooterLinks() {
             </div>
             <div className='footer-links__programming'>
                 <span className='footer-links__title'>Programming</span>
-                <ul>
+                <ul className='footer-links__list'>
                     <Link to='/ways-to-listen'>
                         <li>Ways To Listen</li>
                     </Link>
@@ -44,7 +46,7 @@ export default function FooterLinks() {
             </div>
             <div className='footer-links__about'>
                 <span className='footer-links__title'>About</span>
-                <ul>
+                <ul className='footer-links__list'>
                     <Link to='/contact-us'>
                         <li>Contact Us</li>
                     </Link>
@@ -77,6 +79,7 @@ export default function FooterLinks() {
                     </a>
                 </ul>
             </div>
+            <FollowUs />
         </nav>
     )
 }

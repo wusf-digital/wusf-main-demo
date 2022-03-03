@@ -25,3 +25,17 @@
 .article-name a:hover {
     color: var(--color-usf-tertiary);
 }
+
+@media (min-width: 500px) {
+    .articles {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .articles {
+        width: 85%;
+        justify-content: flex-start;
+    }
+}

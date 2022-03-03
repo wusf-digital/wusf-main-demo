@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 export default function Footer() {
     return (
         <footer className='main-footer'>
-            <div>© {new Date().getFullYear()} All rights reserved, WUSF</div>
+            <div className='main-footer__copyright'>© {new Date().getFullYear()} All rights reserved, WUSF</div>
             <div className='main-footer__logo-container'>
                 <StaticImage
                     layout="fixed"

@@ -1,89 +1,57 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { 
-    faFacebook,
-    faTwitter,
-    faInstagram,
-    faYoutube,
-    faLinkedin
-} from '@fortawesome/free-brands-svg-icons'
+import FollowUs from './follow-us'
 
 export default function Navbar() {
     return (
         <nav className='main-nav'>
             <div className='main-nav__container'>
-            <ul>
-                <Link to='/schedule'>
-                    <li>Schedule</li>
-                </Link>
-                <li>Programs</li>
-                <Link to='/ways-to-support'><li>Support</li></Link>
-                <a href='https://wusfnews.wusf.usf.edu/weather'
-                    rel='noopener noreferrer'>
-                    <li>Weather</li>
-                </a>
-                <a href='https://wusfnews.wusf.usf.edu/community-calendar'
-                    rel='noopener noreferrer'>
-                    <li>Events</li>
-                </a>
-                
-                <Link to='/about-us'><li>About Us</li></Link>
-                <a href='https://wusfnews.wusf.usf.edu/'
-                    rel='noopener noreferrer'>
-                    <li>News Home</li>
-                </a>
-            </ul>
-            <hr className='main-nav__divider' />
-            <ul>
-                <a href='https://health.wusf.usf.edu/'
-                    rel='noopener noreferrer'>
-                    <li>Health News Florida</li>
-                </a>
-                <a href='https://wusfnews.wusf.usf.edu/show/florida-matters'
-                    rel='noopener noreferrer'>
-                    <li>Florida Matters</li>
-                </a>
-                <a href='https://wusfnews.wusf.usf.edu/term/university-beat'
-                    rel='noopener noreferrer'>
-                    <li>University Beat</li>
-                </a>
-                <a href='https://wusfnews.wusf.usf.edu/storycorps-tampa-bay'
-                    rel='noopener noreferrer'>
-                    <li>StoryCorps Tampa Bay</li>
-                </a>
-                
-            </ul>
-            <hr className='main-nav__divider' />
-            <span>Follow Us</span>
-            <div className='main-nav__social'>
-                <a href='https://www.facebook.com/WUSF?ref=ts'
-                    target='_blank'
-                    rel='noopener noreferrer'>
-                    <FontAwesomeIcon icon={faFacebook} size='1x' />
-                </a>
-                <a href='https://twitter.com/wusf'
-                    target='_blank'
-                    rel='noopener noreferrer'>
-                    <FontAwesomeIcon icon={faTwitter} size='1x' />
-                </a>
-                <a href='https://www.instagram.com/wusfpublicmedia/?hl=en'
-                    target='_blank'
-                    rel='noopener noreferrer'>
-                    <FontAwesomeIcon icon={faInstagram} size='1x' />
-                </a>
-                <a href='https://www.youtube.com/user/WUSFChannel'
-                    target='_blank'
-                    rel='noopener noreferrer'>
-                    <FontAwesomeIcon icon={faYoutube} size='1x' />
-                </a>
-                <a href='https://www.linkedin.com/company/wusf-public-media/'
-                    target='_blank'
-                    rel='noopener noreferrer'>
-                    <FontAwesomeIcon icon={faLinkedin} size='1x' />
-                </a>
-            </div>
+                <ul className='main-nav--links-list'>
+                    <Link to='/schedule'>
+                        <li className='main-nav--links-list'>Schedule</li>
+                    </Link>
+                        <li className='main-nav--links-list'>Programs</li>
+                    <Link to='/ways-to-support'>
+                        <li className='main-nav--links-list'>Support</li>
+                    </Link>
+                    <a href='https://wusfnews.wusf.usf.edu/weather'
+                        rel='noopener noreferrer'>
+                        <li className='main-nav--links-list'>Weather</li>
+                    </a>
+                    <a href='https://wusfnews.wusf.usf.edu/community-calendar'
+                        rel='noopener noreferrer'>
+                        <li className='main-nav--links-list'>Events</li>
+                    </a>
+                    
+                    <Link to='/about-us'>
+                        <li className='main-nav--links-list'>About Us</li>
+                    </Link>
+                    <a href='https://wusfnews.wusf.usf.edu/'
+                        rel='noopener noreferrer'>
+                        <li className='main-nav--links-list'>News Home</li>
+                    </a>
+                </ul>
+                <hr className='main-nav__divider' />
+                <ul className='main-nav--links-list'>
+                    <a href='https://health.wusf.usf.edu/'
+                        rel='noopener noreferrer'>
+                        <li className='main-nav--links-list'>Health News Florida</li>
+                    </a>
+                    <a href='https://wusfnews.wusf.usf.edu/show/florida-matters'
+                        rel='noopener noreferrer'>
+                        <li className='main-nav--links-list'>Florida Matters</li>
+                    </a>
+                    <a href='https://wusfnews.wusf.usf.edu/term/university-beat'
+                        rel='noopener noreferrer'>
+                        <li className='main-nav--links-list'>University Beat</li>
+                    </a>
+                    <a href='https://wusfnews.wusf.usf.edu/storycorps-tampa-bay'
+                        rel='noopener noreferrer'>
+                        <li className='main-nav--links-list'>StoryCorps Tampa Bay</li>
+                    </a> 
+                </ul>
+                <FollowUs />
             </div>
         </nav>
     )
