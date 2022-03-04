@@ -1,9 +1,30 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
 
 import FollowUs from './follow-us'
 
-export default function Navbar() {
+export default function NavbarNew() {
+    return (
+        <Navbar className='main-nav' expand="lg">
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav>
+                    <Link to="/schedule" activeClassName="active" className='nav-link'>Schedule</Link>
+                    <Link to="/" activeClassName="active" className='nav-link'>Programs</Link>
+                    <Link to="/ways-to-support" activeClassName="active" className='nav-link'>Support</Link>
+                    <Nav.Link href='https://wusfnews.wusf.usf.edu/weather' className='nav-link'>Weather</Nav.Link>
+                    <Nav.Link href='https://wusfnews.wusf.usf.edu/community-calendar' className='nav-link'>Events</Nav.Link>
+                    <Link to='/about-us' activeClassName='active' className='nav-link'>About Us</Link>
+                    <Nav.Link href='https://wusfnews.wusf.usf.edu/' className='nav-link'>News</Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
+    )
+}
+
+ function NavbarOld() {
     return (
         <nav className='main-nav'>
             <div className='main-nav__container'>
