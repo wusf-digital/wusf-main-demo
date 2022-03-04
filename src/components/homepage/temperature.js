@@ -10,7 +10,7 @@ export default function Temperature() {
     const { celsiusToFahrenheit } = conversions
 
     return (
-        <span>
+        <span className='header-bar__end--temperature'>
             { loading && <Loading /> }
             { !loading && error ? <Error /> :
                 `Tampa, FL
