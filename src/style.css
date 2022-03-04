@@ -137,6 +137,10 @@ body {
     align-items: center;
 }
 .footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-around;
+    background-color: rgba(123,117,94,1);
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -144,6 +148,12 @@ body {
     color: whitesmoke;
     font-weight: bold;
     border-bottom: 2px solid var(--color-white);
+}
+.footer-links__list {
+    flex-direction: column;   
+    padding-top: 5px;
+    list-style: none;
+    padding-left: 0;
 }
 button.donate {
     display: flex;
@@ -258,10 +268,7 @@ a:focus {
         flex-direction: column;
     }
     .footer-links {
-        display: flex;
-        flex-direction: row;
-        justify-content:  space-between;
-        background-color: rgba(123,117,94,1);
+        
         grid-row: 5 / span 1;
         grid-column: col-start / -1;
     }
@@ -271,10 +278,6 @@ a:focus {
     .footer-links__support {
         display: flex;
         flex-direction: column;
-    }
-    .footer-links__list {
-        flex-direction: column;   
-        padding-top: 5px;
     }
     .footer-links--social {
         display: none;
@@ -346,11 +349,6 @@ a:focus {
         flex-direction: column;
     }
     .footer-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: rgba(123,117,94,1);
-        color: whitesmoke;
         grid-column: col-start 3 / span 12;
         grid-row: 4;
     }
